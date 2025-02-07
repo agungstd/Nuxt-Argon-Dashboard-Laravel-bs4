@@ -43,7 +43,7 @@ class ForgotPasswordController extends JsonApiController
         } catch (Throwable $ex) {
             return $this->reply()->errors([
                 Error::fromArray([
-                    'title' => 'Bad Request',
+                    'title' => 'Error Request',
                     'detail' => $ex->getMessage(),
                     'status' => '400',
                 ])
